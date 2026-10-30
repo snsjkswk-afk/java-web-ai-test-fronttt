@@ -217,7 +217,7 @@
                   type="date"
                   placeholder="选择日期"
                   value-format="YYYY-MM-DD"
-                  style="width: 100%"
+                  style="width: 200px"
                 />
               </el-form-item>
             </el-col>
@@ -228,18 +228,18 @@
                   type="date"
                   placeholder="选择日期"
                   value-format="YYYY-MM-DD"
-                  style="width: 100%"
+                  style="width: 200px"
                 />
               </el-form-item>
             </el-col>
             <el-col :span="5">
               <el-form-item label="公司">
-                <el-input v-model="expr.company" placeholder="公司名称" />
+                <el-input v-model="expr.company" placeholder="公司名称" style="width: 160px" />
               </el-form-item>
             </el-col>
             <el-col :span="5">
               <el-form-item label="职位">
-                <el-input v-model="expr.job" placeholder="职位" />
+                <el-input v-model="expr.job" placeholder="职位" style="width: 160px" />
               </el-form-item>
             </el-col>
             <el-col :span="2">
@@ -247,7 +247,7 @@
             </el-col>
           </el-row>
         </div>
-        <el-button type="primary" link @click="addExpr" style="margin-left: 100px">
+        <el-button type="primary" link @click="addExpr" style="margin-left: 100px; width: 180px">
           <el-icon><Plus /></el-icon> 添加工作经历
         </el-button>
       </el-form>
